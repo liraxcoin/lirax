@@ -1,0 +1,17 @@
+{
+    "name": "docapp",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "author": "jagveer",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.18.2",
+        "cors": "^2.8.4",
+        "express": "^4.15.3",
+        "forver": "0.0.6",
+        "nodemon": "^1.17.2",
+        "requestify": "^0.2.5"
+    }
+}
