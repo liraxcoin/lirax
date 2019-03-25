@@ -20,7 +20,25 @@ module.exports = function(web3) {
     };
 
 
+// ------------------------------------------------------------------
 
+  module.getowner = function(address) {
+        var promise = new Promise((resolve, reject) => {
+            var result = {};
+            try {
+                result.address = address;
+
+                return resolve(result)
+            } catch (err) {
+                console.log('Error getting owner.');
+                console.log(err);
+                return reject(err.message)
+            }
+        });
+
+        return promise
+    };
+    // -------------------------------------------
     // -------------------------------------------
     module.create = function() {
         var promise = new Promise((resolve, reject) => {
