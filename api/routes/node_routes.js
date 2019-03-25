@@ -1,6 +1,8 @@
 module.exports = function(app, web3) {
     const generalSrv = require('../../services/ethnode/general')(web3);
     const addressSrv = require('../../services/ethnode/address')(web3);
+    const userchange = require('../../services/ethnode/contract')(web3);
+    
     const txSrv = require('../../services/ethnode/tx')(web3);
     const contractSrv = require('../../services/ethnode/contract')(web3);
     var requestify = require('requestify');
